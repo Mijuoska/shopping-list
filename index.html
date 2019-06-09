@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+
+    h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    form {
+        margin: auto;
+    }
+    
+    #shopping-list > li:hover {
+        text-decoration: line-through;
+    }
+
+    .main {
+        width: 35%;
+        margin: auto;
+    }
+
+    </style>
+    <title>Budjetointiappi</title>
+</head>
+
+<body>
+    <div class="w3-container main">
+<h1>Ostoslista</h1>
+<p>Lisää tuotteita listalle alta. Tuotteet listataan kalleimmasta edullisimpaan. 
+    Voit poistaa tuotteita klikkaamalla.</p>
+
+<ul id="shopping-list" class="w3-ul w3-hoverable"></ul>
+
+<h3>Syötä tuotteita</h3>
+<form class="w3-container">
+<input id="item-name" type="text" placeholder="Tuotteen nimi">
+<input id="item-price" type="text" placeholder="hinta" size=5> € 
+<br><br> <button id="add-item">Lisää tuote</button>
+</form>
+
+</div>
+
+<script src="shopping-list.js"></script>
+</body>
+
+</html>
