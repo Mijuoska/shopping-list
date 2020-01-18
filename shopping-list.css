@@ -1,0 +1,52 @@
+  header {
+      margin-bottom: 30px;
+  }
+  
+  h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+
+    li {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    li:hover {
+        text-decoration: underline;
+    }
+
+
+    .item .price {
+        display: inline-block;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #list-container {
+        width: 20%;
+    }
+
+    #shopping-list {
+        width: 90%;
+    }
+
+    #price-input {
+        width: 40%;
+        display: inline-block;
+    }
+
+    #form-container {
+        margin-bottom: 40px;
+    }
+
+
+    #add-item-button {
+        margin-top: 30px;
+    }
+
+
