@@ -3,50 +3,46 @@
 
 <head>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-    <style>
-
-    h1 {
-        text-align: center;
-        font-size: 40px;
-    }
-
-    p {
-        text-align: center;
-    }
-
-    form {
-        margin: auto;
-    }
-    
-    #shopping-list > li:hover {
-        text-decoration: line-through;
-    }
-
-    .main {
-        width: 35%;
-        margin: auto;
-    }
-
-    </style>
-    <title>Budjetointiappi</title>
+<link rel="stylesheet" href="shopping-list.css" type="text/css">
+    <title>Ostoslista</title>
 </head>
 
 <body>
-    <div class="w3-container main">
+   
+<header class="w3-container w3-blue-gray">
 <h1>Ostoslista</h1>
-<p>Lisää tuotteita listalle alta. Tuotteet listataan kalleimmasta edullisimpaan. 
-    Voit poistaa tuotteita klikkaamalla.</p>
+</header>
 
-<ul id="shopping-list" class="w3-ul w3-hoverable"></ul>
+<p style="text-align: center;">Lisää tuotteita listalle ja järjestä ne hinnan mukaan.</p>
+<hr>
+<div class="w3-cell-row main">
+    <div class="w3-container w3-cell form-container">
+    <h3>Syötä tuotteita</h3>
+    <form id="add-item-form">
+                <input type="text" class="w3-input w3-border" placeholder="Tuotteen nimi" name="itemName"><br>
+            
 
-<h3>Syötä tuotteita</h3>
-<form class="w3-container">
-<input id="item-name" type="text" placeholder="Tuotteen nimi">
-<input id="item-price" type="text" placeholder="hinta" size=5> € 
-<br><br> <button id="add-item">Lisää tuote</button>
-</form>
+                <input type="number" class="w3-input w3-border" id="price-input" placeholder="hinta" name="itemPrice"
+                    step="0.1"> €
 
+    
+        <br><button class="w3-button w3-white w3-border w3-border-blue" id="add-item-button">Lisää tuote</button>
+    </form>
+    
+
+
+    <p style="margin-top: 30px;">Listaa tuotteet:</p>
+
+    <input class="w3-radio" type="radio" name="sort" value="desc" checked="true"> Kalleimmasta edullisimpaan</input><br>
+        <input class="w3-radio" type="radio" name="sort" value="asc"> Edullisimmasta kalleimpaan</input>
+</div>
+
+
+<div class="container w3-cell" id="list-container">
+<h4>Tuotteet:</h4>
+<ul id="shopping-list" class="w3-ul w3-hoverable w3-card-number"></ul>
+<p id="total"><span>Yhteensä:</span>&nbsp;<span id=total-price></span></p>
+</div>
 </div>
 
 <script src="shopping-list.js"></script>
