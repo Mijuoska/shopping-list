@@ -1,47 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="shopping-list.css" type="text/css">
-    <title>Ostoslista</title>
+    <title>Shopping List</title>
 </head>
 
 <body>
    
 <header class="w3-container w3-blue-gray">
-<h1>Ostoslista</h1>
+<h1>Shopping List</h1>
 </header>
 
-<p style="text-align: center;">Lisää tuotteita listalle ja järjestä ne hinnan mukaan.</p>
+<p style="text-align: center;">Add products and sort them by price.</p>
 <hr>
 <div class="w3-cell-row main">
     <div class="w3-container w3-cell form-container">
-    <h3>Syötä tuotteita</h3>
+    <h3>Enter products</h3>
     <form id="add-item-form">
-                <input type="text" class="w3-input w3-border" placeholder="Tuotteen nimi" name="itemName"><br>
+                <input type="text" class="w3-input w3-border" placeholder="Name of products" name="itemName"><br>
             
 
-                <input type="number" class="w3-input w3-border" id="price-input" placeholder="hinta" name="itemPrice"
+                <input type="number" class="w3-input w3-border" id="price-input" placeholder="price" name="itemPrice"
                     step="0.1"> €
 
     
-        <br><button class="w3-button w3-white w3-border w3-border-blue" id="add-item-button">Lisää tuote</button>
+        <br><button class="w3-button w3-white w3-border w3-border-blue" id="add-item-button">Add product</button>
     </form>
     
 
 
-    <p style="margin-top: 30px;">Listaa tuotteet:</p>
+    <p style="margin-top: 30px;">List products:</p>
 
-    <input class="w3-radio" type="radio" name="sort" value="desc" checked="true"> Kalleimmasta edullisimpaan</input><br>
-        <input class="w3-radio" type="radio" name="sort" value="asc"> Edullisimmasta kalleimpaan</input>
+    <input class="w3-radio" type="radio" name="sort" value="desc" checked="true"> From the most expensive to the cheapest</input><br>
+        <input class="w3-radio" type="radio" name="sort" value="asc">From the cheapest to the most expensive</input>
 </div>
 
 
 <div class="container w3-cell" id="list-container">
-<h4>Tuotteet:</h4>
+<h4>Items:</h4>
 <ul id="shopping-list" class="w3-ul w3-hoverable w3-card-number"></ul>
-<p id="total"><span>Yhteensä:</span>&nbsp;<span id=total-price></span></p>
+<p id="total"><span>Total:</span>&nbsp;<span id=total-price></span></p>
 </div>
 </div>
 
